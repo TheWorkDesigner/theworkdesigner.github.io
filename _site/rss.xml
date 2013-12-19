@@ -6,8 +6,8 @@
     <atom:link href="http://www.kevintrethewey.com/rss.xml" rel="self" type="application/rss+xml" />
     <description>Kevin Trethewey's Personal Website</description>
     <language>en-za</language>
-    <pubDate>Mon, 17 Dec 2012 06:55:16 +0200</pubDate>
-    <lastBuildDate>Mon, 17 Dec 2012 06:55:16 +0200</lastBuildDate>
+    <pubDate>Thu, 19 Dec 2013 10:04:29 +0200</pubDate>
+    <lastBuildDate>Thu, 19 Dec 2013 10:04:29 +0200</lastBuildDate>
 
     
     <item>
@@ -17,14 +17,14 @@
       <author>kevint@drivensoftware.com (Kevin Trethewey)</author>
       <guid>http://www.kevintrethewey.com</guid>
       <description>&lt;div id=&quot;search_results_area&quot;&gt;
-  &lt;h2&gt;Pages &lt;span id=&quot;result_count&quot;&gt;&lt;/span&gt;&lt;/h2&gt;
+  &lt;h2&gt;Posts &lt;span id=&quot;result_count&quot;&gt;&lt;/span&gt;&lt;/h2&gt;
   &lt;ul id=&quot;search_results&quot; class=&quot;posts&quot;&gt;
   &lt;/ul&gt;
 &lt;/div&gt;
 
 &lt;div id=&quot;home&quot;&gt;
 
-  &lt;h2&gt;Pages&lt;/h2&gt;
+  &lt;h2&gt;Posts&lt;/h2&gt;
 
   &lt;ul class=&quot;posts&quot;&gt;
 
@@ -39,19 +39,6 @@
   
 
         
-
-        &lt;li&gt;
-      &lt;a href=&quot;/Pages/MyAphorisms.html&quot;&gt;My Aphorisms&lt;/a&gt; &lt;span id=&quot;post_lastupdated&quot;&gt; &amp;raquo last revised December, 14, 2012.&lt;/span&gt;
-        &lt;div&gt;&lt;i&gt;Short ideas or observations about the world around me...&lt;/i&gt;&lt;/div&gt;
-    &lt;/li&gt;
-      
-        
-  
-
-        
-  
-
-        
   
 
   
@@ -59,19 +46,6 @@
         
   
 
-        
-  
-
-        
-  
-
-        
-
-        &lt;li&gt;
-      &lt;a href=&quot;/Pages/Quotes.html&quot;&gt;Quotes&lt;/a&gt; &lt;span id=&quot;post_lastupdated&quot;&gt; &amp;raquo last revised December, 14, 2012.&lt;/span&gt;
-        &lt;div&gt;&lt;i&gt;A collection of other people's quotes and comments that mean something to me...&lt;/i&gt;&lt;/div&gt;
-    &lt;/li&gt;
-      
         
   
 
@@ -86,7 +60,7 @@
         
 
         &lt;li&gt;
-      &lt;a href=&quot;/Pages/HelloWorld.html&quot;&gt;Hello World&lt;/a&gt; &lt;span id=&quot;post_lastupdated&quot;&gt; &amp;raquo last revised May, 05, 2011.&lt;/span&gt;
+      &lt;a href=&quot;/Pages/HelloWorld.html&quot;&gt;Hello World&lt;/a&gt; &lt;span id=&quot;post_lastupdated&quot;&gt; &amp;raquo last revised December, 19, 2013.&lt;/span&gt;
         &lt;div&gt;&lt;i&gt;A (very) brief introduction of who I am&lt;/i&gt;&lt;/div&gt;
     &lt;/li&gt;
       
@@ -96,18 +70,6 @@
         
   
 
-        
-  
-
-        
-  
-
-  
-
-        
-  
-
-        
   
 
         
@@ -130,18 +92,6 @@
         
   
 
-        
-  
-
-        
-  
-
-  
-
-        
-  
-
-        
   
 
         
@@ -164,18 +114,6 @@
         
   
 
-        
-  
-
-        
-  
-
-  
-
-        
-  
-
-        
   
 
         
@@ -198,18 +136,6 @@
         
   
 
-        
-  
-
-        
-  
-
-  
-
-        
-  
-
-        
   
 
         
@@ -224,10 +150,10 @@
 
   &lt;br&gt;
 
-  &lt;h2&gt;Last 5 Tweets&lt;/h2&gt;
+  &lt;h2&gt;Recent Tweets&lt;/h2&gt;
     &lt;div id=&quot;tweets&quot;&gt;
         &lt;p&gt;Please wait while my tweets load &lt;img src=&quot;/images/loading.gif&quot; /&gt;&lt;/p&gt;
-        &lt;p&gt;&lt;a href=&quot;http://twitter.com/kevintrethewey&quot;&gt;If you can't wait - check out what I've been twittering&lt;/a&gt;&lt;/p&gt;
+        &lt;p&gt;&lt;a href=&quot;http://twitter.com/theworkdesigner&quot;&gt;If you can&#39;t wait - check out what I&#39;ve been twittering&lt;/a&gt;&lt;/p&gt;
     &lt;/div&gt;
   &lt;br&gt;
   
@@ -235,38 +161,24 @@
     var posts = [
       
         {
-          title:   unescape('').gsub(/\+/, ' '),
-          summary: unescape('').gsub(/\+/, ' '),
-          content: unescape('%0A++Pages+%0A++%0A++%0A%0A%0A%0A%0A++Pages%0A%0A++%0A%0A%0A%7B%25+for+weight+in+%281..10%29+%25%7D%0A++%7B%25+for+post+in+site.pages+%25%7D%0A%0A++++++++%7B%25+if+post.weight+%3D%3D+weight+%25%7D%0A%0A++++++++%0A++++++%7B%7B+post.title+%7D%7D++%26raquo+last+revised+%7B%7B+post.lastupdated+%7C+date%3A+%22%25B%2C+%25d%2C+%25Y.%22+%7D%7D%0A++++++++%7B%7B+post.summary+%7D%7D%0A++++%0A++++++%0A++++++++%7B%25+endif+%25%7D%0A++%7B%25+endfor+%25%7D%0A%7B%25+endfor+%25%7D%0A%0A++%0A%0A++Last+5+Tweets%0A++++%0A++++++++Please+wait+while+my+tweets+load+%0A++++++++If+you+can%27t+wait+-+check+out+what+I%27ve+been+twittering%0A++++%0A++%0A++%0A++%0A++++var+posts+%3D+%5B%0A++++++%7B%25+for+post+in+site.pages+%25%7D%0A++++++++%7B%0A++++++++++title%3A+++unescape%28%27%7B%7B+post.title+++%7C+strip_html+%7C+cgi_escape+%7D%7D%27%29.gsub%28%2F%5C%2B%2F%2C+%27+%27%29%2C%0A++++++++++summary%3A+unescape%28%27%7B%7B+post.summary+%7C+strip_html+%7C+cgi_escape+%7D%7D%27%29.gsub%28%2F%5C%2B%2F%2C+%27+%27%29%2C%0A++++++++++content%3A+unescape%28%27%7B%7B+post.content+%7C+strip_html+%7C+cgi_escape+%7D%7D%27%29.gsub%28%2F%5C%2B%2F%2C+%27+%27%29%2C%0A++++++++++url%3A+++++unescape%28%27%7B%7B+post.url+++++%7C+strip_html+%7C+cgi_escape+%7D%7D%27%29.gsub%28%2F%5C%2B%2F%2C+%27+%27%29%2C%0A++++++++%7D%2C%0A++++++%7B%25+endfor+%25%7D%0A++++0%5D%3B%0A%0A++++posts.pop%28%29%3B%0A++%0A%0A++%0A%0A++%0A++++getTwitters%28%27tweets%27%2C+%7B%0A++++++id%3A+%27kevintrethewey%27%2C%0A++++++count%3A+8%2C%0A++++++enableLinks%3A+true%2C%0A++++++ignoreReplies%3A+true%2C%0A++++++clearContents%3A+true%2C%0A++++++template%3A+%27%25text%25+%25time%25%27%0A++++%7D%29%3B%0A++%0A%0A').gsub(/\+/, ' '),
-          url:     unescape('%2Findex.html').gsub(/\+/, ' '),
+          title:   unescape(&#39;&#39;).gsub(/\+/, &#39; &#39;),
+          summary: unescape(&#39;&#39;).gsub(/\+/, &#39; &#39;),
+          content: unescape(&#39;%0A++Posts+%0A++%0A++%0A%0A%0A%0A%0A++Posts%0A%0A++%0A%0A%0A%7B%25+for+weight+in+%281..10%29+%25%7D%0A++%7B%25+for+post+in+site.pages+%25%7D%0A%0A++++++++%7B%25+if+post.weight+%3D%3D+weight+%25%7D%0A%0A++++++++%0A++++++%7B%7B+post.title+%7D%7D++%26raquo+last+revised+%7B%7B+post.lastupdated+%7C+date%3A+%22%25B%2C+%25d%2C+%25Y.%22+%7D%7D%0A++++++++%7B%7B+post.summary+%7D%7D%0A++++%0A++++++%0A++++++++%7B%25+endif+%25%7D%0A++%7B%25+endfor+%25%7D%0A%7B%25+endfor+%25%7D%0A%0A++%0A%0A++Recent+Tweets%0A++++%0A++++++++Please+wait+while+my+tweets+load+%0A++++++++If+you+can%27t+wait+-+check+out+what+I%27ve+been+twittering%0A++++%0A++%0A++%0A++%0A++++var+posts+%3D+%5B%0A++++++%7B%25+for+post+in+site.pages+%25%7D%0A++++++++%7B%0A++++++++++title%3A+++unescape%28%27%7B%7B+post.title+++%7C+strip_html+%7C+cgi_escape+%7D%7D%27%29.gsub%28%2F%5C%2B%2F%2C+%27+%27%29%2C%0A++++++++++summary%3A+unescape%28%27%7B%7B+post.summary+%7C+strip_html+%7C+cgi_escape+%7D%7D%27%29.gsub%28%2F%5C%2B%2F%2C+%27+%27%29%2C%0A++++++++++content%3A+unescape%28%27%7B%7B+post.content+%7C+strip_html+%7C+cgi_escape+%7D%7D%27%29.gsub%28%2F%5C%2B%2F%2C+%27+%27%29%2C%0A++++++++++url%3A+++++unescape%28%27%7B%7B+post.url+++++%7C+strip_html+%7C+cgi_escape+%7D%7D%27%29.gsub%28%2F%5C%2B%2F%2C+%27+%27%29%2C%0A++++++++%7D%2C%0A++++++%7B%25+endfor+%25%7D%0A++++0%5D%3B%0A%0A++++posts.pop%28%29%3B%0A++%0A%0A++%0A%0A++%0A++++getTwitters%28%27tweets%27%2C+%7B%0A++++++id%3A+%27theworkdesigner%27%2C%0A++++++count%3A+8%2C%0A++++++enableLinks%3A+true%2C%0A++++++ignoreReplies%3A+true%2C%0A++++++clearContents%3A+true%2C%0A++++++template%3A+%27%25text%25+%25time%25%27%0A++++%7D%29%3B%0A++%0A%0A&#39;).gsub(/\+/, &#39; &#39;),
+          url:     unescape(&#39;%2Findex.html&#39;).gsub(/\+/, &#39; &#39;),
         },
       
         {
-          title:   unescape('Hello+World').gsub(/\+/, ' '),
-          summary: unescape('A+%28very%29+brief+introduction+of+who+I+am').gsub(/\+/, ' '),
-          content: unescape('Professionally%0A%0AI%27m+the+founding+member+of+Driven+Software+in+Johannesburg%2C+South+Africa.%0A%0AI+have+a+strong+technical+background+after+almost+15+years+in+the+software+industry+at+almost+every+level+from+tea+boy+to+management+%28and+back+again%29.%0A%0AIn+this+time+I+have+had+the+opportunity+to+work+in+and+observe+projects+and+teams+in+vastly+different+environments%2C+and+seen+vastly+differing+levels+of+success+amongst+them+and+through+this+I%27ve+developed+an+eye+for+what+works+and+what+doesn%27t%2C+and+a+passion+for+assisting+and+empowering+people.%0A%0AI+still+write+code+%28and+plan+to+continue+indefinitely%29%2C+but+the+majority+of+my+time+currently+is+spent+in+a+leadership+position.%0A%0APersonally%0A%0AThis+page+isn%27t+long+enough+to+describe+the+list+of+things+I+am+interested+in+outside+of+my+professional+working+life+%28and+there+isn%27t+really+a+clear+distinction+anyway%29.%0A%0AI%27m+a+happy+family+man%2C+with+a+wife+who+is+my+partner+in+everything%2C+including+my+business.+Father+of+one%2C+soon+to+be+two.+On+any+given+day+I+could+be+spending+time+woodworking%2C+developing+a+new+software+product+idea%2C+digging+in+the+garden%2C+soldering+something%2C+out+on+my+mountain+bike+or+deep+in+a+book+-+usually+with+my+son+in+tow.%0A%0AReading+List%0ALast+5%0A%2A+The+Goal+-+Eliyahu+Goldratt%0A%2A+Making+Things+Move+-+Roberts%0A%2A+John+dies+at+the+end+-+David+Wong%0A%2A+Brave+new+world+-+Aldous+Huxley%0A%2A+Specification+by+Example+-+Adzic%0A%0ANext+5%0A%2A+Radical+management+-+Denning%0A%2A+Continuous+Delivery+-+Farley%0A%2A+Your+Brain+at+work+-+Rock%0A%2A+The+Wide+Lens+-+Adner%0A%2A+Peopleware+-+DeMarco%0A').gsub(/\+/, ' '),
-          url:     unescape('%2FPages%2FHelloWorld.html').gsub(/\+/, ' '),
+          title:   unescape(&#39;Hello+World&#39;).gsub(/\+/, &#39; &#39;),
+          summary: unescape(&#39;A+%28very%29+brief+introduction+of+who+I+am&#39;).gsub(/\+/, &#39; &#39;),
+          content: unescape(&#39;TODO&#39;).gsub(/\+/, &#39; &#39;),
+          url:     unescape(&#39;%2FPages%2FHelloWorld.html&#39;).gsub(/\+/, &#39; &#39;),
         },
       
         {
-          title:   unescape('My+Aphorisms').gsub(/\+/, ' '),
-          summary: unescape('Short+ideas+or+observations+about+the+world+around+me...').gsub(/\+/, ' '),
-          content: unescape('%2A+++Team+dynamics+seem+to+be+much+healthier+when+the+person+leading+what+gets+done+and+the+one+leading+how+are+not+the+same+person.%0A%2A+++We+equate+effort+with+value+because+effort%27s+easier+to+quantify+and+measure.+In+knowledge+work+they+don%27t+correlate.+Ever.%0A%2A+++Dev+manager%3A+show+me+your+skills%2C+if+they+fit+I%27ll+hire+you.+Agile+team%3A+show+us+your+values%2C+if+they+fit+we%27ll+teach+you+the+skills.%0A%2A+++If+at+first+you+don%27t+succeed+and+you+can%27t+afford+to+try+again%2C+you+probably+approached+it+wrong.%0A%2A+++If+you+want+to+find+the+person+in+an+organisation+with+the+authority+to+effect+structural+change%2C+go+up+the+management+stack+passing+all+those+that+can+say+no%2C+and+find+one+with+the+power+to+say+yes.%0A%2A+++To+any+employer%3A+if+you+can%27t+afford+to+trade+an+hour+of+received+labor+for+an+hour+of+given+mentorship+you%27re+doing+your+maths+wrong.%0A%2A+++When+someone+tells+me+a+tech+is+powerful+but+complicated+I%27m+skeptical.+When+they+say+it%27s+powerful+and+simple+then+they+have+my+attention.%0A%2A+++How+many+great+books+have+been+written+in+the+name+of+profit%3F+Probably+very+few.%0A%2A+++Probably+the+most+important+life+lesson+I+have+learnt+in+the+last+5+years%3A+Context+is+King.%0A%2A+++The+right+food+is+important%3B+Desires+of+the+body+increase+when+they+are+not+satisfied.+Desires+of+the+mind+increase+when+they+are.%0A%2A+++Next+challenge+for+mid-large+enterprise%3A+understanding+they+still+need+good+software+developers+whilst+good+developers+no+longer+need+them.').gsub(/\+/, ' '),
-          url:     unescape('%2FPages%2FMyAphorisms.html').gsub(/\+/, ' '),
-        },
-      
-        {
-          title:   unescape('Quotes').gsub(/\+/, ' '),
-          summary: unescape('A+collection+of+other+people%27s+quotes+and+comments+that+mean+something+to+me...').gsub(/\+/, ' '),
-          content: unescape('%2A+%22If+you+want+to+go+fast%2C+go+alone.+If+you+want+to+go+far%2C+go+together.%22+--+African+Proverb%0A%2A+%22The+amount+of+work+is+infinite%2C+constantly.+Doing+one+thing+does+not+reduce+the+backlog.+Infinity-1%3Dinfinity.%22+--+Jim+Mccarthy%0A%2A+%22The+task+of+the+modern+educator+is+not+to+cut+down+jungles%2C+but+to+irrigate+deserts.%22+--+CS+Lewis%0A%2A+%22Every+new+problem+domain+will+attempt+to+seduce+you+with+its+beautiful%2C+chess-like+subtlety.+Ignore+this+and+respond+by+playing+checkers.%22+--+%40codinghorror%0A%2A+%22Inexperienced+devs+produce+clever+code.+The+master+produces+the+simplest%2C+minimal+solution+he+can+get+away+with.%22+--+%40jdtangney%0A%2A+%22It+is+not+actual+suffering+but+a+taste+of+better+things+which+excites+people+to+revolt.%22+--+Eric+Hoffer%0A%2A+%22The+journey+is+the+reward.%22+--+Chinese+Proverb%0A%2A+%22Development+is+not+science.+Customers+don%27t+want+%27truths%27%22+--+%40flowchainsensei%0A%2A+%22Pairing+is+Continuous+Integration+for+ideas.%22+--+Joshua+Kerievsky%0A%2A+%22Why+would+you+think+building+an+effective+organisation+requires+any+less+discipline+than+building+good+software%3F%22+--+%40flowchainsensei%0A%2A+%22Trust+the+leaders+who+often+say+%27I+don%27t+know.%27+The+rest+of+them+are+faking+it%2C+or+worse%2C+delusional.%E2%80%9D+--+Donald+Miller%0A%2A+%22Remember%2C+patterns+are+not+used+to+solve+a+problem.+They+are+NOT+tools.+The+Patterns+are+IN+the+problem+-+your+job+is+to+discover+them%22+--+A+Kolsky%0A%2A+%22The+thicker+your+company%E2%80%99s+policy+document%2C+the+more+top+management+is+abdicating+their+actual+responsibility%22+--+%40baldyza%0A%2A+%22People+ought+to+think+more+about+who+wrote+the+software+that%27s+running+in+their+head+%28sigh%29.+It+probably+wasn%27t+them.%22+--+Elon+Musk').gsub(/\+/, ' '),
-          url:     unescape('%2FPages%2FQuotes.html').gsub(/\+/, ' '),
-        },
-      
-        {
-          title:   unescape('').gsub(/\+/, ' '),
-          summary: unescape('').gsub(/\+/, ' '),
-          content: unescape('%0A%0A++%0A++++Kevin+Trethewey%0A++++http%3A%2F%2Fwww.kevintrethewey.com%2F%0A++++%0A++++Kevin+Trethewey%27s+Personal+Website%0A++++en-za%0A++++%7B%7B+site.time+%7C+date%3A+%22%25a%2C+%25d+%25b+%25Y+%25H%3A%25M%3A%25S+%25z%22+%7D%7D%0A++++%7B%7B+site.time+%7C+date%3A+%22%25a%2C+%25d+%25b+%25Y+%25H%3A%25M%3A%25S+%25z%22+%7D%7D%0A%0A++++%7B%25+for+post+in+site.pages+%25%7D%0A++++%0A++++++%7B%7B+post.title+%7D%7D%0A++++++http%3A%2F%2Fwww.kevintrethewey.com%7B%7B+post.url+%7D%7D%0A++++++%7B%7B+post.date+%7C+date%3A+%22%25a%2C+%25d+%25b+%25Y+%25H%3A%25M%3A%25S+%25z%22+%7D%7D%0A++++++kevint%40drivensoftware.com+%28Kevin+Trethewey%29%0A++++++http%3A%2F%2Fwww.kevintrethewey.com%7B%7B+post.id+%7D%7D%0A++++++%7B%7B+post.content+%7C+xml_escape+%7D%7D%0A++++%0A++++%7B%25+endfor+%25%7D%0A%0A+++%0A').gsub(/\+/, ' '),
-          url:     unescape('%2Frss.xml').gsub(/\+/, ' '),
+          title:   unescape(&#39;&#39;).gsub(/\+/, &#39; &#39;),
+          summary: unescape(&#39;&#39;).gsub(/\+/, &#39; &#39;),
+          content: unescape(&#39;%0A%0A++%0A++++Kevin+Trethewey%0A++++http%3A%2F%2Fwww.kevintrethewey.com%2F%0A++++%0A++++Kevin+Trethewey%27s+Personal+Website%0A++++en-za%0A++++%7B%7B+site.time+%7C+date%3A+%22%25a%2C+%25d+%25b+%25Y+%25H%3A%25M%3A%25S+%25z%22+%7D%7D%0A++++%7B%7B+site.time+%7C+date%3A+%22%25a%2C+%25d+%25b+%25Y+%25H%3A%25M%3A%25S+%25z%22+%7D%7D%0A%0A++++%7B%25+for+post+in+site.pages+%25%7D%0A++++%0A++++++%7B%7B+post.title+%7D%7D%0A++++++http%3A%2F%2Fwww.kevintrethewey.com%7B%7B+post.url+%7D%7D%0A++++++%7B%7B+post.date+%7C+date%3A+%22%25a%2C+%25d+%25b+%25Y+%25H%3A%25M%3A%25S+%25z%22+%7D%7D%0A++++++kevint%40drivensoftware.com+%28Kevin+Trethewey%29%0A++++++http%3A%2F%2Fwww.kevintrethewey.com%7B%7B+post.id+%7D%7D%0A++++++%7B%7B+post.content+%7C+xml_escape+%7D%7D%0A++++%0A++++%7B%25+endfor+%25%7D%0A%0A+++%0A&#39;).gsub(/\+/, &#39; &#39;),
+          url:     unescape(&#39;%2Frss.xml&#39;).gsub(/\+/, &#39; &#39;),
         },
       
     0];
@@ -277,13 +189,13 @@
   &lt;script src=&quot;http://twitterjs.googlecode.com/svn/trunk/src/twitter.min.js&quot;&gt;&lt;/script&gt;
 
   &lt;script type=&quot;text/javascript&quot;&gt;
-    getTwitters('tweets', {
-      id: 'kevintrethewey',
+    getTwitters(&#39;tweets&#39;, {
+      id: &#39;theworkdesigner&#39;,
       count: 8,
       enableLinks: true,
       ignoreReplies: true,
       clearContents: true,
-      template: '%text% &lt;a href=&quot;http://twitter.com/%user_screen_name%/statuses/%id_str%/&quot;&gt;%time%&lt;/a&gt;&lt;hr&gt;'
+      template: &#39;%text% &lt;a href=&quot;http://twitter.com/%user_screen_name%/statuses/%id_str%/&quot;&gt;%time%&lt;/a&gt;&lt;hr&gt;&#39;
     });
   &lt;/script&gt;
 &lt;/div&gt;
@@ -296,76 +208,7 @@
       <pubDate></pubDate>
       <author>kevint@drivensoftware.com (Kevin Trethewey)</author>
       <guid>http://www.kevintrethewey.com</guid>
-      <description>&lt;h4&gt;Professionally&lt;/h4&gt;
-&lt;p&gt;I&amp;#8217;m the founding member of Driven Software in Johannesburg, South Africa.&lt;/p&gt;
-&lt;p&gt;I have a strong technical background after almost 15 years in the software industry at almost every level from tea boy to management (and back again).&lt;/p&gt;
-&lt;p&gt;In this time I have had the opportunity to work in and observe projects and teams in vastly different environments, and seen vastly differing levels of success amongst them and through this I&amp;#8217;ve developed an eye for what works and what doesn&amp;#8217;t, and a passion for assisting and empowering people.&lt;/p&gt;
-&lt;p&gt;I still write code (and plan to continue indefinitely), but the majority of my time currently is spent in a leadership position.&lt;/p&gt;
-&lt;h4&gt;Personally&lt;/h4&gt;
-&lt;p&gt;This page isn&amp;#8217;t long enough to describe the list of things I am interested in outside of my professional working life (and there isn&amp;#8217;t really a clear distinction anyway).&lt;/p&gt;
-&lt;p&gt;I&amp;#8217;m a happy family man, with a wife who is my partner in everything, including my business. Father of one, soon to be two. On any given day I could be spending time woodworking, developing a new software product idea, digging in the garden, soldering something, out on my mountain bike or deep in a book &amp;#8211; usually with my son in tow.&lt;/p&gt;
-&lt;h4&gt;Reading List&lt;/h4&gt;
-&lt;h5&gt;Last 5&lt;/h5&gt;
-&lt;ul&gt;
-	&lt;li&gt;The Goal &amp;#8211; Eliyahu Goldratt&lt;/li&gt;
-	&lt;li&gt;Making Things Move &amp;#8211; Roberts&lt;/li&gt;
-	&lt;li&gt;John dies at the end &amp;#8211; David Wong&lt;/li&gt;
-	&lt;li&gt;Brave new world &amp;#8211; Aldous Huxley&lt;/li&gt;
-	&lt;li&gt;Specification by Example &amp;#8211; Adzic&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h5&gt;Next 5&lt;/h5&gt;
-&lt;ul&gt;
-	&lt;li&gt;Radical management &amp;#8211; Denning&lt;/li&gt;
-	&lt;li&gt;Continuous Delivery &amp;#8211; Farley&lt;/li&gt;
-	&lt;li&gt;Your Brain at work &amp;#8211; Rock&lt;/li&gt;
-	&lt;li&gt;The Wide Lens &amp;#8211; Adner&lt;/li&gt;
-	&lt;li&gt;Peopleware &amp;#8211; DeMarco&lt;/li&gt;
-&lt;/ul&gt;</description>
-    </item>
-    
-    <item>
-      <title>My Aphorisms</title>
-      <link>http://www.kevintrethewey.com/Pages/MyAphorisms.html</link>
-      <pubDate></pubDate>
-      <author>kevint@drivensoftware.com (Kevin Trethewey)</author>
-      <guid>http://www.kevintrethewey.com</guid>
-      <description>&lt;ul&gt;
-	&lt;li&gt;Team dynamics seem to be much healthier when the person leading what gets done and the one leading how are not the same person.&lt;/li&gt;
-	&lt;li&gt;We equate effort with value because effort&amp;#8217;s easier to quantify and measure. In knowledge work they don&amp;#8217;t correlate. Ever.&lt;/li&gt;
-	&lt;li&gt;Dev manager: show me your skills, if they fit I&amp;#8217;ll hire you. Agile team: show us your values, if they fit we&amp;#8217;ll teach you the skills.&lt;/li&gt;
-	&lt;li&gt;If at first you don&amp;#8217;t succeed and you can&amp;#8217;t afford to try again, you probably approached it wrong.&lt;/li&gt;
-	&lt;li&gt;If you want to find the person in an organisation with the authority to effect structural change, go up the management stack passing all those that can say no, and find one with the power to say yes.&lt;/li&gt;
-	&lt;li&gt;To any employer: if you can&amp;#8217;t afford to trade an hour of received labor for an hour of given mentorship you&amp;#8217;re doing your maths wrong.&lt;/li&gt;
-	&lt;li&gt;When someone tells me a tech is powerful but complicated I&amp;#8217;m skeptical. When they say it&amp;#8217;s powerful and simple then they have my attention.&lt;/li&gt;
-	&lt;li&gt;How many great books have been written in the name of profit? Probably very few.&lt;/li&gt;
-	&lt;li&gt;Probably the most important life lesson I have learnt in the last 5 years: Context is King.&lt;/li&gt;
-	&lt;li&gt;The right food is important; Desires of the body increase when they are not satisfied. Desires of the mind increase when they are.&lt;/li&gt;
-	&lt;li&gt;Next challenge for mid-large enterprise: understanding they still need good software developers whilst good developers no longer need them.&lt;/li&gt;
-&lt;/ul&gt;</description>
-    </item>
-    
-    <item>
-      <title>Quotes</title>
-      <link>http://www.kevintrethewey.com/Pages/Quotes.html</link>
-      <pubDate></pubDate>
-      <author>kevint@drivensoftware.com (Kevin Trethewey)</author>
-      <guid>http://www.kevintrethewey.com</guid>
-      <description>&lt;ul&gt;
-	&lt;li&gt;&amp;#8220;If you want to go fast, go alone. If you want to go far, go together.&amp;#8221; &amp;#8212; African Proverb&lt;/li&gt;
-	&lt;li&gt;&amp;#8220;The amount of work is infinite, constantly. Doing one thing does not reduce the backlog. Infinity-1=infinity.&amp;#8221; &amp;#8212; Jim Mccarthy&lt;/li&gt;
-	&lt;li&gt;&amp;#8220;The task of the modern educator is not to cut down jungles, but to irrigate deserts.&amp;#8221; &amp;#8212; CS Lewis&lt;/li&gt;
-	&lt;li&gt;&amp;#8220;Every new problem domain will attempt to seduce you with its beautiful, chess-like subtlety. Ignore this and respond by playing checkers.&amp;#8221; &amp;#8212; @codinghorror&lt;/li&gt;
-	&lt;li&gt;&amp;#8220;Inexperienced devs produce clever code. The master produces the simplest, minimal solution he can get away with.&amp;#8221; &amp;#8212; @jdtangney&lt;/li&gt;
-	&lt;li&gt;&amp;#8220;It is not actual suffering but a taste of better things which excites people to revolt.&amp;#8221; &amp;#8212; Eric Hoffer&lt;/li&gt;
-	&lt;li&gt;&amp;#8220;The journey is the reward.&amp;#8221; &amp;#8212; Chinese Proverb&lt;/li&gt;
-	&lt;li&gt;&amp;#8220;Development is not science. Customers don&amp;#8217;t want &amp;#8216;truths&amp;#8217;&amp;#8221; &amp;#8212; @flowchainsensei&lt;/li&gt;
-	&lt;li&gt;&amp;#8220;Pairing is Continuous Integration for ideas.&amp;#8221; &amp;#8212; Joshua Kerievsky&lt;/li&gt;
-	&lt;li&gt;&amp;#8220;Why would you think building an effective organisation requires any less discipline than building good software?&amp;#8221; &amp;#8212; @flowchainsensei&lt;/li&gt;
-	&lt;li&gt;&amp;#8220;Trust the leaders who often say &amp;#8216;I don&amp;#8217;t know.&amp;#8217; The rest of them are faking it, or worse, delusional.” &amp;#8212; Donald Miller&lt;/li&gt;
-	&lt;li&gt;&amp;#8220;Remember, patterns are not used to solve a problem. They are &lt;span class=&quot;caps&quot;&gt;NOT&lt;/span&gt; tools. The Patterns are IN the problem &amp;#8211; your job is to discover them&amp;#8221; &amp;#8212; A Kolsky&lt;/li&gt;
-	&lt;li&gt;&amp;#8220;The thicker your company’s policy document, the more top management is abdicating their actual responsibility&amp;#8221; &amp;#8212; @baldyza&lt;/li&gt;
-	&lt;li&gt;&amp;#8220;People ought to think more about who wrote the software that&amp;#8217;s running in their head (sigh). It probably wasn&amp;#8217;t them.&amp;#8221; &amp;#8212; Elon Musk&lt;/li&gt;
-&lt;/ul&gt;</description>
+      <description>&lt;p&gt;&lt;span class=&quot;caps&quot;&gt;TODO&lt;/span&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -380,7 +223,7 @@
     &lt;title&gt;Kevin Trethewey&lt;/title&gt;
     &lt;link&gt;http://www.kevintrethewey.com/&lt;/link&gt;
     &lt;atom:link href=&quot;http://www.kevintrethewey.com/rss.xml&quot; rel=&quot;self&quot; type=&quot;application/rss+xml&quot; /&gt;
-    &lt;description&gt;Kevin Trethewey's Personal Website&lt;/description&gt;
+    &lt;description&gt;Kevin Trethewey&#39;s Personal Website&lt;/description&gt;
     &lt;language&gt;en-za&lt;/language&gt;
     &lt;pubDate&gt;{{ site.time | date: &quot;%a, %d %b %Y %H:%M:%S %z&quot; }}&lt;/pubDate&gt;
     &lt;lastBuildDate&gt;{{ site.time | date: &quot;%a, %d %b %Y %H:%M:%S %z&quot; }}&lt;/lastBuildDate&gt;
